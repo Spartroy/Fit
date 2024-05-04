@@ -22,7 +22,7 @@ $message = $_POST['message'];
 $sql = "INSERT INTO sign (name, email, message) VALUES ('$name', '$email', '$message')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    echo "New record created successfullly";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
